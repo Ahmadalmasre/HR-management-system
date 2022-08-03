@@ -9,8 +9,11 @@ for(var i=1;i< 7;i++) {
 
 }
 
-
+var Id=999
 const Ghazi  ={
+    
+    EmployeeID:ID+1,
+    salary:0,
 
     FullName:"Ghazi Samer",
     Department:"Administration",
@@ -18,8 +21,13 @@ const Ghazi  ={
     //imageURl:https://accounts.google.com/SignOutOptions?hl=en&continue=https://myaccount.google.com/%3Fhl%3Den%26utm_source%3DOGB%26utm_medium%3Dact ,
     
 }
+Id= Id+1;
 
 const Lana  ={
+    EmployeeID:ID+1,
+    salary:0,
+
+    
     FullName:"Lana Ali",
     Department:"Finance",
     Level:"Senior",
@@ -27,9 +35,13 @@ const Lana  ={
     
 
 }
+Id =Id+1;
 
 
 const Tamara  ={
+    salary:0,
+
+    EmployeeID:ID+1,
     FullName:"Tamara Ayoub",
     Department:"",
     Level:"Senior",
@@ -38,9 +50,12 @@ const Tamara  ={
 }
 
 
-
+Id =Id+1;
 
 const Safi  ={
+    salary:0,
+
+    EmployeeID:ID+1,
     FullName:"Safi Walid",
     Department:"Administration",
     Level:"Mid-Senior",
@@ -48,17 +63,23 @@ const Safi  ={
    
 }
 
-
+Id =Id+1;
 const Omar  ={
+    salary:0,
+
+    EmployeeID:ID+1,
     FullName:"Omar Zaid",
     Department:"Development",
     Level:"Senior",
     //imageURl:https://accounts.google.com/SignOutOptions?hl=en&continue=https://myaccount.google.com/%3Fhl%3Den%26utm_source%3DOGB%26utm_medium%3Dact ,
    
 }
-
+Id =Id+1;
 
 const Rana  ={
+    salary:0,
+
+    EmployeeID:ID+1,
     FullName:"Rana Saleh",
     Department:"Development",
     Level:"Junior",
@@ -66,8 +87,11 @@ const Rana  ={
    
 }
 
-
+Id =Id+1;
 const Hadi ={
+    EmployeeID:ID+1,
+    salary:0,
+
     FullName:"Hadi Ahmad",
     Department:"Finance",
     Level:"Mid-Senior",
@@ -98,7 +122,7 @@ if(i===0){
     while(sum<1500||sum>2000){
         sum=getRandomNum(0,9,4);}
     
-    Ghazi.salary=sum-(sum*.075);
+    Ghazi.salary=floor(sum-(sum*.075));
     console.log("Ful Name=  "+Ghazi.FullName);
     console.log("salary= "+Ghazi.salary);
     sum=getRandomNum(0,9,4);
@@ -109,7 +133,7 @@ if(i===0){
     while(sum<1500||sum>2000){
         sum=getRandomNum(0,9,4);}
     
-    Lana.salary=sum-(sum*.075);
+    Lana.salary=floor(sum-(sum*.075));
     console.log("Ful Name=  "+Lana.FullName);
     console.log("salary= "+Lana.salary);
     sum=getRandomNum(0,9,4);
@@ -122,7 +146,7 @@ else if(i===2){
     while(sum<1500||sum>2000){
         sum=getRandomNum(0,9,4);}
     
-    Tamara.salary=sum-(sum*.075);
+    Tamara.salary=floor(sum-(sum*.075));
     console.log("Ful Name=  "+Tamara.FullName);
     console.log("salary= "+Tamara.salary);
     sum=getRandomNum(0,9,4);
@@ -133,7 +157,7 @@ else if(i===3){
     while(sum<1000||sum>1500){
         sum=getRandomNum(0,9,4);}
     
-    Safi.salary=sum-(sum*.075);
+    Safi.floor(salary=sum-(sum*.075));
     console.log("Ful Name=  "+Safi.FullName);
     console.log("salary= "+Safi.salary);
     sum=getRandomNum(0,9,4);
@@ -144,7 +168,7 @@ else if(i===4){
     while(sum<1500||sum>2000){
         sum=getRandomNum(0,9,4);}
     
-    Omar.salary=sum-(sum*.075);
+    Omar.salary=floor(sum-(sum*.075));
     console.log("Ful Name=  "+Omar.FullName);
     console.log("salary= "+Omar.salary);
     sum=getRandomNum(0,9,4);
@@ -155,7 +179,7 @@ else if(i===5){
     while(sum<500||sum>1000){
         sum=getRandomNum(0,9,4);}
     
-    Rana.salary=sum-(sum*.075);
+    Rana.salary=floor(sum-(sum*.075));
     console.log("Ful Name=  "+Rana.FullName);
     console.log("salary= "+Rana.salary);
     sum=getRandomNum(0,9,4);
@@ -166,7 +190,7 @@ else if(i===6){
     while(sum<1000||sum>1500){
         sum=getRandomNum(0,9,4);}
     
-    Hadi.salary=sum-(sum*.075);
+    Hadi.salary=floor(sum-(sum*.075));
     console.log("Ful Name=  "+Hadi.FullName);
     console.log("salary= "+Hadi.salary);
 }
